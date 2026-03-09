@@ -1,0 +1,9 @@
+.:
+README.md
+SKILL.md
+create_bibliotecatrading_skill.sh
+move_instructions.txt
+scripts
+tree.txt
+
+./scripts:

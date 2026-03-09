@@ -1,0 +1,6 @@
+Instrucciones para mover a la ruta final y hacer push:
+
+    mv /tmp/bibliotecatrading-skill-temp /home/ubuntu/.openclaw/workspace/bibliotecatrading-skill
+    sudo chown -R ubuntu:ubuntu /home/ubuntu/.openclaw/workspace/bibliotecatrading-skill
+    chmod -R u+rwX /home/ubuntu/.openclaw/workspace/bibliotecatrading-skill
+    Ejecutar: /home/ubuntu/.openclaw/workspace/bibliotecatrading-skill/scripts/push_remote.sh
