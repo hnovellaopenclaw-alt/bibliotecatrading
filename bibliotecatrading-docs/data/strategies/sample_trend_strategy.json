@@ -1,0 +1,23 @@
+{
+  "strategy_name": "Tendencia Altos y Bajos 5min",
+  "description": "Estrategia para operar en gráficos de 5 minutos identificando la continuación de una tendencia basada en la formación de altos y bajos más altos/bajos (higher highs / higher lows). Opera en spot.",
+  "timeframe": "5m",
+  "market_type": "spot",
+  "trend_confirmation_context": "Observe tendencia diaria/1h para contexto, operar en 5m.",
+  "entry_conditions": [
+    "Identificado primer alto (H1).",
+    "Precio retrocede formando primer bajo (L1).",
+    "Identificado segundo alto (H2) mayor que H1.",
+    "Precio retrocede formando segundo bajo (L2) mayor que L1.",
+    "PRECIO CRUZA AL ALZA H2 (SEÑAL DE COMPRA)."
+  ],
+  "exit_conditions": {
+    "take_profit": "3% sobre precio de entrada (ajustable)",
+    "stop_loss_rule": "Justo por debajo del segundo alto confirmado (H2)."
+  },
+  "indicators_needed": [
+    {"name": "RSI", "parameters": {"period": 14}},
+    {"name": "MACD", "parameters": {"fast": 12, "slow": 26, "signal": 9}}
+  ],
+  "notes": "Esta estrategia se basa en la confirmación de la estructura del mercado (higher highs/lower lows). Se pueden añadir más indicadores (VWAP, volumen) y refinar las condiciones de entrada/salida y stop-loss para mejorar la rentabilidad y gestión de riesgo."
+}
